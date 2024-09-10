@@ -8,19 +8,76 @@
         <title>Contato</title>
     </head>
     <body>
-        <ul>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="produto.html">Produto</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-        </ul>
 
-        <h1>Contato</h1>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="produto.html">Produto</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h1>Contato</h1>
 
-        <ul>
-            <li><strong>Telefone:</strong> +55 (16) 9 9999-8888</li>
-            <li><strong>E-mail:</strong> criacaopaginaweb@mkt.com</li>
-            <li><strong>Instagram:</strong> @criacaopaginaweb</li>
-        </ul>
+            <ul>
+                <li><strong>Telefone:</strong> +55 (16) 9 9999-8888</li>
+                <li><strong>E-mail:</strong> criacaopaginaweb@mkt.com</li>
+                <li><strong>Instagram:</strong> @criacaopaginaweb</li>
+            </ul>
+        
+        
 
+            <h2>Formulário</h2>
+            <form action="/enviarContato" method="post">
+                <label for="nome">Nome</label>
+                <input 
+                    type="text" 
+                    name="nome" 
+                    id="nome" 
+                    placeholder="Fulano da Silva" 
+                    required
+                ><br><br>
+
+                <label for="email">E-mail</label>
+                <input 
+                    type="text" 
+                    name="email" 
+                    id="email" 
+                    placeholder="abc@emai.com" 
+                    required
+                ><br><br>
+
+                <label for="idade">Idade</label>
+                <input 
+                    type="number"
+                    name="idade" 
+                    id="idade" 
+                    min="0" 
+                    max="110"
+                    required
+                ><br><br>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea 
+                    name="mensagem" 
+                    id="mensagem"
+                    maxlength="400"
+                    cols="40"
+                    rows="4"
+                    placeholder="Digite o que deseja" 
+                    required
+                ></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Página criada pelos alunos da 
+                turma de Criação de Página Web com Marketing Digital</p>
+        </footer>
     </body>
 </html>

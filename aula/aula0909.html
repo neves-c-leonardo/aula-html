@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09</title>
+    <script>
+        function apresentarAlerta() {
+            alert("Olá mundo!")
+        }
+    </script>
+</head>
+<body>
+    <form action="/resultado" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required>
+
+        <br>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required>
+
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
