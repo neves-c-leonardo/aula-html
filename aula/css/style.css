@@ -21,3 +21,11 @@ li {
 .grupoTeste {
     color: cyan;
 }
+
+#senai {
+    color: purple;
+}
+
+#senai:hover {
+    color: blue;
+}
